@@ -7,6 +7,12 @@ import scrapy
 
 
 class SteamItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    game_url = scrapy.Field()
+    img_url = scrapy.Field()
+    game_name = scrapy.Field()
+    release_date = scrapy.Field()
+    platform = scrapy.Field()
+    rating = scrapy.Field()
+    original_price = scrapy.Field()
+    discouted_price = scrapy.Field()
+    discouted_rate = scrapy.Field()
